@@ -19,7 +19,7 @@ def parse_args():
 # Prepare function to find final position
 
 
-def final_position():
+def final_position(input: str):
     for line in input:
         line = line.rstrip()
         Start = 0
