@@ -16,12 +16,10 @@ def parse_args():
                         help='Input file containing coded instructions')
     return parser.parse_args()
 
-# Run analyses
+# Prepare function to find final position
 
 
-def main():
-    args = parse_args()
-    input = open(args.input).readlines()
+def final_position():
     for line in input:
         line = line.rstrip()
         Start = 0
@@ -31,6 +29,13 @@ def main():
         Statement = 'Santa is on ' + str(Floor)
         print(Statement)
 
+# Run analyses
+
+
+def main():
+    args = parse_args()
+    input = open(args.input).readlines()
+    
 
 if __name__ == '__main__':
     main()
