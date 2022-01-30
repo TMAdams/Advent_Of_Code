@@ -18,7 +18,7 @@ def parse_args():
 # Prepare function to find final position
 
 
-def final_position(input: str):
+def final_position(input: list):
     for line in input:
         line = line.rstrip()
         Start = 0
@@ -30,7 +30,7 @@ def final_position(input: str):
 # Prepare function to find entrance to the basement
 
 
-def basement_entry(input: str):
+def basement_entry(input: list):
     for line in input:
         line = line.rstrip()
         Floor = 0
