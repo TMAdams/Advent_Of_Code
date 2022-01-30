@@ -16,7 +16,7 @@ def parse_args():
                         help='Input file containing coded instructions')
     return parser.parse_args()
 
-# Prepare function to perform calculations
+# Run analyses
 
 
 def main():
