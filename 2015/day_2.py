@@ -33,7 +33,8 @@ def total_paper(input: list):
             areas_list[0]
         packages.append(package_area)
     total_area = sum(packages)
-    return 'The elves require ' + total_area + ' square feet of wrapping paper'
+    return 'The elves require ' + str(total_area) + \
+        ' square feet of wrapping paper'
 
 # Run analyses
 
