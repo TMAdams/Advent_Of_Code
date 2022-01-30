@@ -17,7 +17,6 @@ def parse_args():
 
 # Calculate total area of paper needed
 
-
 def total_paper(input: list):
     packages = []
     for line in input:
