@@ -17,6 +17,7 @@ def parse_args():
 
 # Calculate total area of paper needed
 
+
 def total_paper(input: list):
     packages = []
     for line in input:
@@ -27,8 +28,8 @@ def total_paper(input: list):
         area_3 = dimensions[1] * dimensions[2]
         areas_list = [area_1, area_2, area_3]
         areas_list.sort()
-        package_area = (2 * area_1) + (2 * area_2) + (2 * area_3) +
-        areas_list[0]
+        package_area = (2 * area_1) + (2 * area_2) + (2 * area_3) + \
+            areas_list[0]
         packages.append(package_area)
     total_area = sum(packages)
     return 'The elves require ' + total_area + ' square feet of wrapping paper'
