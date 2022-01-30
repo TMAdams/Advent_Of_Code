@@ -26,8 +26,7 @@ def final_position():
         Up = line.count('(')
         Down = line.count(')')
         Floor = Start + Up - Down
-        Statement = 'Santa is on ' + str(Floor)
-        print(Statement)
+        return 'Santa is on ' + str(Floor)
 
 # Run analyses
 
@@ -35,7 +34,8 @@ def final_position():
 def main():
     args = parse_args()
     input = open(args.input).readlines()
-    
+    print(final_position(input))
+
 
 if __name__ == '__main__':
     main()
