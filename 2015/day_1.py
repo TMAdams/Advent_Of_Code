@@ -26,7 +26,7 @@ def main():
     Up = input.count('(')
     Down = input.count(')')
     Floor = Start + Up - Down
-    Statement = 'Santa is on' + str(Floor)
+    Statement = 'Santa is on ' + str(Floor)
     print(Statement)
 
 
