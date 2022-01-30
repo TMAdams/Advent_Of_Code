@@ -6,7 +6,7 @@
 
 import argparse
 
-# Parse CLI arguments
+# Prepare function to parse CLI arguments
 
 
 def parse_args():
@@ -15,3 +15,16 @@ def parse_args():
     parser.add_argument('--input', required=True,
                         help='Input file containing coded instructions')
     return parser.parse_args()
+
+# Prepare function to perform calculations
+
+
+def count_floors():
+    args = parse_args()
+    input = args.input
+    Start = 0
+    Up = input.count('(')
+    Down = input.count(')')
+    Floor = Start + Up - Down
+    Statement = 'Santa is on' + str(Floor)
+    print(Statement)
