@@ -19,7 +19,7 @@ def parse_args():
 # Prepare function to perform calculations
 
 
-def count_floors():
+def main():
     args = parse_args()
     input = args.input
     Start = 0
@@ -28,3 +28,7 @@ def count_floors():
     Floor = Start + Up - Down
     Statement = 'Santa is on' + str(Floor)
     print(Statement)
+
+
+if __name__ == '__main__':
+    main()
