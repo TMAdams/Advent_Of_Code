@@ -26,7 +26,7 @@ def final_position(input: str):
         Up = line.count('(')
         Down = line.count(')')
         Floor = Start + Up - Down
-        return 'Santa is on ' + str(Floor)
+        return 'Santa is on floor ' + str(Floor)
 
 # Run analyses
 
