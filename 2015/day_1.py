@@ -21,13 +21,15 @@ def parse_args():
 
 def main():
     args = parse_args()
-    input = args.input
-    Start = 0
-    Up = input.count('(')
-    Down = input.count(')')
-    Floor = Start + Up - Down
-    Statement = 'Santa is on ' + str(Floor)
-    print(Statement)
+    input = open(args.input).readlines()
+    for line in input:
+        line = line.rstrip()
+        Start = 0
+        Up = line.count('(')
+        Down = line.count(')')
+        Floor = Start + Up - Down
+        Statement = 'Santa is on ' + str(Floor)
+        print(Statement)
 
 
 if __name__ == '__main__':
