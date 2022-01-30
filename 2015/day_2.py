@@ -60,6 +60,7 @@ def main():
     args = parse_args()
     input = open(args.input).readlines()
     print(total_paper(input))
+    print(total_ribbon(input))
 
 
 if __name__ == '__main__':
