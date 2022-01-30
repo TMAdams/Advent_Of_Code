@@ -36,6 +36,23 @@ def total_paper(input: list):
     return 'The elves require ' + str(total_area) + \
         ' square feet of wrapping paper'
 
+# Calculate total length of ribbon needed
+
+
+def total_ribbon(input: list):
+    ribbon = []
+    for line in input:
+        line = line.rstrip()
+        dimensions = line.split('x')
+        dimensions_int = [int(entry) for entry in dimensions]
+        dimensions_int.sort()
+        bow_length = dimensions_int[0] * dimensions_int[1] * dimensions_int[2]
+        ribbon_wrap = (2 * dimensions_int[0]) + (2 * dimensions_int[1])
+        ribbon_length = bow_length + ribbon_wrap
+        ribbon.append(ribbon_length)
+    total_ribbon = sum(ribbon)
+    return 'The elves require ' + str(total_ribbon) + ' feet of ribbon'
+
 # Run analyses
 
 
