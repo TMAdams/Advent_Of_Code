@@ -41,3 +41,7 @@ def main():
     args = parse_args()
     input = open(args.input).readlines()
     print(total_paper(input))
+
+
+if __name__ == '__main__':
+    main()
