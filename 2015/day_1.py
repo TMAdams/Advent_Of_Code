@@ -28,6 +28,24 @@ def final_position(input: str):
         Floor = Start + Up - Down
         return 'Santa is on floor ' + str(Floor)
 
+# Prepare function to find entrance to the basement
+
+
+def basement_entry(input: str):
+    for line in input:
+        line = line.rstrip()
+        Floor = 0
+        Count = 0
+        for instruction in line:
+            Count += 1
+            if instruction == '(':
+                Floor = Floor + 1
+            elif instruction == ')':
+                Floor = Floor - 1
+            if Floor < 0:
+                return 'Santa enters the basement at instruction ' + str(Count)
+                break
+
 # Run analyses
 
 
@@ -35,6 +53,7 @@ def main():
     args = parse_args()
     input = open(args.input).readlines()
     print(final_position(input))
+    print(basement_entry(input))
 
 
 if __name__ == '__main__':
