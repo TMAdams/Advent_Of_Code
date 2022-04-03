@@ -37,3 +37,7 @@ def main():
     args = parse_args()
     input = open(args.input)
     print(mine_coin(input))
+
+
+if __name__ == '__main__':
+    main()
