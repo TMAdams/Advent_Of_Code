@@ -49,3 +49,7 @@ def main():
     for item in input_str:
         input_list.append(item)
     print(total_houses(input_list))
+
+
+if __name__ == '__main__':
+    main()
