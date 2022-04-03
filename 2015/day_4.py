@@ -16,7 +16,7 @@ def parse_args():
                         help='Input secret key')
     return parser.parse_args()
 
-# Mine the advent coin
+# Mine the first advent coin
 
 
 def mine_coin_5(input: str):
@@ -30,6 +30,19 @@ def mine_coin_5(input: str):
     return str(number) + ' is the solution needed to mine an AdventCoin'
 
 
+# Mine the second advent coin
+
+
+def mine_coin_6(input: str):
+    number = 0
+    while True:
+        number += 1
+        string = input + str(number)
+        hash = hashlib.md5(string.encode('utf-8')).hexdigest()
+        if hash.startswith('000000'):
+            break
+    return str(number) + ' is the solution needed to mine an AdventCoin'
+
 # Run analyses
 
 
@@ -37,6 +50,7 @@ def main():
     args = parse_args()
     input = args.input
     print(mine_coin_5(input))
+    print(mine_coin_6(input))
 
 
 if __name__ == '__main__':
