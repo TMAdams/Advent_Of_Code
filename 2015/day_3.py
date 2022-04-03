@@ -21,7 +21,7 @@ def parse_args():
 def total_houses(input: list):
     x_coord = 0
     y_coord = 0
-    coord_string = x_coord + ', ' + y_coord
+    coord_string = str(x_coord) + ', ' + str(y_coord)
     coords_set = set()
     coords_set.append(coord_string)
     for instruction in input:
