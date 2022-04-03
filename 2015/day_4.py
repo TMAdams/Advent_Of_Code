@@ -27,7 +27,8 @@ def mine_coin_5(input: str):
         hash = hashlib.md5(string.encode('utf-8')).hexdigest()
         if hash.startswith('00000'):
             break
-    return str(number) + ' is the solution needed to mine an AdventCoin'
+    return str(number) + \
+        ' is the solution needed to mine an AdventCoin with 5 zeros'
 
 
 # Mine the second advent coin
@@ -41,7 +42,8 @@ def mine_coin_6(input: str):
         hash = hashlib.md5(string.encode('utf-8')).hexdigest()
         if hash.startswith('000000'):
             break
-    return str(number) + ' is the solution needed to mine an AdventCoin'
+    return str(number) + \
+        ' is the solution needed to mine an AdventCoin with 6 zeros'
 
 # Run analyses
 
