@@ -14,3 +14,27 @@ def parse_args():
     parser.add_argument('--input', required=True,
                         help='Input file containing directions')
     return parser.parse_args()
+
+# Calculate how many houses get presents
+
+
+def total_houses(input: list):
+    x_coord = 0
+    y_coord = 0
+    coord_string = x_coord + ', ' + y_coord
+    coords_set = set()
+    coords_set.append(coord_string)
+    for instruction in input:
+        match instruction:
+            case "^":
+                y_coord += 1
+            case ">":
+                x_coord += 1
+            case "v":
+                y_coord -= 1
+            case "<":
+                x_coord -= 1
+        coord_string = x_coord + ', ' + y_coord
+        coords_set.append(coord_string)
+    house_count = len(coords_set)
+    return str(house_count) + ' houses have at least one present delivered'
