@@ -44,7 +44,7 @@ def total_houses(input: list):
 
 def main():
     args = parse_args()
-    input_str = open(args.input).readlines()
+    input_str = open(args.input).readline().rstrip()
     input_list = []
     for item in input_str:
         input_list.append(item)
