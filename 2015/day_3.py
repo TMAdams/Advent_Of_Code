@@ -23,7 +23,7 @@ def total_houses(input: list):
     y_coord = 0
     coord_string = str(x_coord) + ', ' + str(y_coord)
     coords_set = set()
-    coords_set.append(coord_string)
+    coords_set.add(coord_string)
     for instruction in input:
         match instruction:
             case "^":
@@ -35,7 +35,7 @@ def total_houses(input: list):
             case "<":
                 x_coord -= 1
         coord_string = x_coord + ', ' + y_coord
-        coords_set.append(coord_string)
+        coords_set.add(coord_string)
     house_count = len(coords_set)
     return str(house_count) + ' houses have at least one present delivered'
 
