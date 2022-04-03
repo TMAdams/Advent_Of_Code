@@ -19,7 +19,7 @@ def parse_args():
 # Mine the advent coin
 
 
-def mine_coin(input: str):
+def mine_coin_5(input: str):
     number = 0
     while True:
         number += 1
@@ -36,7 +36,7 @@ def mine_coin(input: str):
 def main():
     args = parse_args()
     input = args.input
-    print(mine_coin(input))
+    print(mine_coin_5(input))
 
 
 if __name__ == '__main__':
