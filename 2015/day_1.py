@@ -38,9 +38,9 @@ def basement_entry(input: list):
         for instruction in line:
             Count += 1
             if instruction == '(':
-                Floor = Floor + 1
+                Floor += 1
             elif instruction == ')':
-                Floor = Floor - 1
+                Floor -= 1
             if Floor < 0:
                 return 'Santa enters the basement at instruction ' + str(Count)
                 break
