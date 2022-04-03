@@ -19,3 +19,9 @@ python C:\Users\TA43952\Documents\GitHub\Advent_Of_Code\2015\day_2.py --input C:
 ```
 python C:\Users\TA43952\Documents\GitHub\Advent_Of_Code\2015\day_3.py --input C:\Users\TA43952\Documents\GitHub\Advent_Of_Code\2015\day3_input.txt
 ```
+
+## Day 4
+
+```
+python C:\Users\TA43952\Documents\GitHub\Advent_Of_Code\2015\day_4.py --input ckczppom
+```
