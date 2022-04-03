@@ -28,3 +28,12 @@ def mine_coin(input: str):
         if hash.startswith('00000'):
             break
     return str(number) + ' is the solution needed to mine an AdventCoin'
+
+
+# Run analyses
+
+
+def main():
+    args = parse_args()
+    input = open(args.input)
+    print(mine_coin(input))
