@@ -35,7 +35,7 @@ def mine_coin(input: str):
 
 def main():
     args = parse_args()
-    input = open(args.input)
+    input = args.input
     print(mine_coin(input))
 
 
