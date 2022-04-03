@@ -78,8 +78,9 @@ def robo_houses(input: list):
             santa_coord = str(santa_x_coord) + ', ' + str(santa_y_coord)
             coord_set_2.add(santa_coord)
     house_count_2 = len(coord_set_2)
-    return str(house_count_2) + ' houses have at least one present delivered with \
-    Robo-Santa helping out'
+    result_string = str(house_count_2) + \
+        ' houses have at least one present delivered with Robo-Santa involved'
+    return result_string
 
 # Run analyses
 
