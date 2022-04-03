@@ -38,3 +38,14 @@ def total_houses(input: list):
         coords_set.append(coord_string)
     house_count = len(coords_set)
     return str(house_count) + ' houses have at least one present delivered'
+
+# Run analyses
+
+
+def main():
+    args = parse_args()
+    input_str = open(args.input).readlines()
+    input_list = []
+    for item in input_str:
+        input_list.append(item)
+    print(total_houses(input_list))
