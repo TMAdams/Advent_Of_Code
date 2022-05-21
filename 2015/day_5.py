@@ -42,7 +42,7 @@ def find_nice_string(input: list):
         for character in string:
             string_length = len(string)
             character_list.append(character)
-        for number in range(string_length):
+        for number in range(string_length - 1):
             if character_list[number] == character_list[number + 1]:
                 duplicate_test = 'Y'
         if vowel_test == 'Y' and bad_test == 'N' and duplicate_test == 'Y':
