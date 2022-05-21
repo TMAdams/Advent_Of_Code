@@ -21,7 +21,7 @@ def parse_args():
 
 def find_nice_string(input: list):
     nice_strings = set()
-    for string in list:
+    for string in input:
         # First, set the default result for each test
         vowel_test = 'N'
         bad_test = 'Y'
