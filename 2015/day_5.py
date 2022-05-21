@@ -57,3 +57,7 @@ def main():
     args = parse_args()
     input = open(args.input).readlines()
     print(find_nice_string(input))
+
+
+if __name__ == '__main__':
+    main()
