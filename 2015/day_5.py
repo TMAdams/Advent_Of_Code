@@ -46,7 +46,7 @@ def find_nice_string(input: list):
         for number in range(string_length - 1):
             if character_list[number] == character_list[number + 1]:
                 duplicate_test = 'Y'
-        if vowel_test == 'Y' and bad_test == 'N' and duplicate_test == 'Y':
+        if vowel_test == 'Y' and bad_test == 'Y' and duplicate_test == 'Y':
             nice_strings.add(string)
     nice_count = len(nice_strings)
     return str(nice_count) + ' strings are nice'
