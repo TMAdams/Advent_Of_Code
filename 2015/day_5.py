@@ -35,8 +35,8 @@ def find_nice_string(input: list):
         if a_count + e_count + i_count + o_count + u_count >= 3:
             vowel_test = 'Y'
         # Next test for presence of bad strings
-        if 'ab' in string or 'cd' in string or 'pq' in string or
-        'xy' in string:
+        if 'ab' in string or 'cd' in string or 'pq' in string or \
+                'xy' in string:
             bad_test = 'N'
         # Finally test for duplicates character
         character_list = []
