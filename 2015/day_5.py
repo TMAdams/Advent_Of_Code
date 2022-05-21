@@ -49,3 +49,11 @@ def find_nice_string(input: list):
             nice_strings.add(string)
     nice_count = len(nice_strings)
     return str(nice_count) + ' strings are nice'
+
+# Run analysis
+
+
+def main():
+    args = parse_args()
+    input = open(args.input).readlines()
+    print(find_nice_string(input))
